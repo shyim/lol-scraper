@@ -24,7 +24,7 @@ async function main() {
 
         if (req.status === 429) {
             console.log('Rate limited');
-            await sleep(120);
+            await sleep(60);
             continue;
         }
 

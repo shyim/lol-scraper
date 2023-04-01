@@ -1,8 +1,8 @@
 # LOL Scraper
 
-I wanted to know how long League of Legends I played, so I downloaded all match data and uploaded the complete data from me. 
+I wanted to know how long League of Legends I played, so I downloaded all the match data and uploaded the complete data from me. 
 
-## How long did you played?
+## How long did you play?
 
 Since June last year 13 Days
 
@@ -27,7 +27,7 @@ cat games/*.json > games.ndjson
 cat games.ndjson | clickhouse-client --query "INSERT INTO data FORMAT JSONAsString"
 ```
 
-### Map into JSON table
+### Map into a JSON table
 
 ```sql
 insert into json  select s from data;
