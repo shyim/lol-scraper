@@ -15,7 +15,7 @@ Import all JSON files into Clickhouse DB and try to select some data
 ### Create Schema
 
 ```sql
-set allow_experimental_object_type = 1
+set allow_experimental_object_type = 1;
 create table data (s String) Engine = Memory;
 CREATE TABLE json (o JSON) Engine = MergeTree ORDER BY tuple();
 ```
